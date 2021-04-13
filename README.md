@@ -2,7 +2,7 @@
 
 **Component 1: Selecting top-trending hashtags from Twitter’s trending page that have been active for more than 24 hrs.** *(2 points)*
 
-	Selection criteria (Twitter summary, etc)
+Selection criteria (Twitter summary, etc)
 
 **Component 2: Online-bot tweet-to-CSV service: provides a file with ~800 tweets, specifically ones associated to a given hashtag and with a minimum of 100 likes.** *(2 points)*
 
