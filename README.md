@@ -1,4 +1,4 @@
-# NETS213 Final Project - Crowdsourced Hashtag Summarizer
+# NETS213 Final Project - HASHTAG DICTIONARY - a Crowdsourced Hashtag Summarizer 
 
 **Component 1: Selecting top-trending hashtags from Twitter’s trending page that have been active for more than 24 hrs.** *(2 points)*
 
