@@ -25,7 +25,7 @@ We will post three different HITs to mTurk. The purpose of such is to have varyi
 To create the HITs all in one csv (we have three CSVs, one with no tweets per HIT, one with 10 per HIT, one with 20 per HIT), we will first need to aggregate the tweets of different hashtags from our twitter-scraping bot. One HIT (one line of our CSVs) only contains tweets pertaining to one hashtag, however we do not want workers receiving HITs that pertain to the same hashtag. Thus, we will set a limit on the number of tasks workers can do (about 3-5) to ensure that we minimize the number of workers looking at the same hashtag twice. In addition, we will assign the tweets to HITs such that they are grouped with tweets that have a similar number of likes (so some HITs will have tweets with a lot of likes, while others may not be as many). This is such that we can later identify if there is correlation between popular tweets and the quality of the summary. 
 In all HITs, workers will be informed about the hashtag. The result of each HIT will be aggregated into one file, and manipulated with python to create the generation 2 HITS.
 
-**Component 4a: Generation 2 of HITs to use crowdsourcing as quality control, where three workers workers give ratings to each summary, allowing for averaged ratings to be generated** *(4 points)*
+**Component 4a: QC: Generation 2 of HITs to use crowdsourcing as quality control, where three workers workers give ratings to each summary, allowing for averaged ratings to be generated** *(4 points)*
 
 We will implement another three separate HITs each containing summaries from No tweet, 10 Tweets and 20 Tweets groups. Each summary will be given to three workers for rating between 1-5 along with the associated hashtags. We will give criteria for each rating in our instruction to avoid some noise due to different people’s standards (see the mockup hits for the criteria). After each HIT being completed, we will average out the score for each summary using python. 
 
@@ -42,5 +42,3 @@ We will now be left with 4 CSVs. Each CSV will contain averaged ratings for summ
 The requesters will take the top scoring summary for each hashtag among the three crowdsourced generated categories (no tweets, 10 tweets, 20 tweets), and display the best summary for each of the 10 hashtags; this will show the final results of the crowdworkers work in generating a summary about why a hashtag is trending.
 
 Point Total: 19 points
-
-
