@@ -57,8 +57,10 @@ The Aggregation Prep files is data taken from manipulated QC output files, where
 **Code for QC** - *src/QCCode/*
 
 **Code for Aggregation** - *src/AggregationCode/*
-The AggregationCode/QualityvsAmountData.py creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
-The AggregationCode/RatingvsLikes.py creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
+
+*AggregationCode/QualityvsAmountData.py* creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
+
+*AggregationCode/RatingvsLikes.py* creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
 
 -------------------------------------------------------
 # Raw Data Format and Tweet Selection Discussion
