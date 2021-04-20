@@ -46,19 +46,26 @@ Point Total: 19 points
 
 **RAW DATA** - *Raw Tweet Scrapes/*
 
+See "Raw Data Format and Tweet Selection Discussion" for details
+
 **Sample input/output for QC** - *SampleData/0Tweets/QCInput.csv, SampleData/0Tweets/QCOutput.csv, SampleData/10Tweets/QCInput.csv, SampleData/10Tweets/QCOutput.csv, SampleData/20Tweets/QCInput.csv, SampleData/20Tweets/QCOutput.csv*
+
+The QC input files contain the data from the first batch of HITs, where workers wrote summaries. Each row of this file is a summary that was written by each worker along with the tweets the worker was given and the average like count of these tweets. The QC output files contain 3x as many rows, because when we run the QCinput files as HITs on MTurk, we will have 3 workers giving ratings to one summary, so there are 3 ratings per summary.
 
 **Sample input/output for Aggregation** - See input at *SampleData/0Tweets/AggregationPrep.csv, SampleData/10Tweets/AggregationPrep.csv, SampleData/20Tweets/AggregationPrep.csv* - See output at *AggregationScreenshots/*
 
+The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
+
 **Code for QC** - *QCCode/*
 
-**Code for Aggregation** - *AggregationCode*
+**Code for Aggregation** - *AggregationCode/*
+The AggregationCode/QualityvsAmountData.py creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
+The AggregationCode/RatingvsLikes.py creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
 
 -------------------------------------------------------
+# Raw Data Format and Tweet Selection Discussion
 
-
-# Raw Data: Tweet Selection Discussion
-
+We collected our data using the bot https://seobots.io/bots/twitter-hashtag-scraper. The bot generates one CSV per hashtag with columns for the following data: Username, User Handle, Date of Posting, Tweet Text, ReTweet Count, Like Count. Note that this bot-sourced data is not returned in a csv format, where commas are used to separate data, but rather in a space-separated format (we convert this data to a csv version however). We paid (tbd, cost still increasing as we collect more data) to use the bot, which allowed us to determine the number of tweets we wanted to scrape for in each hashtag, the language that the tweet needed to be in, and the minimum number of likes that a tweet needed to have. We chose to only include tweets that had a minimum of 25 likes in order to ensure that the tweets were representative of what most people interacting with the hashtag were actually interacting with. If we had set this barrier to zero, it is possible that we scraped tweets that were just “noise”—spam, or unrelated to the hashtag itself. This bot runs with a completion time of under two minutes, and we sourced at minimum 200 tweets from each hashtag, only using the 200 most popular ones in our actual HITs. 
 
 *#DaunteWright*: Daunte Wright: On April 11, 2021, a Black man named Daunte Wright was pulled over by police officers for a traffic violation related to expired registration tags. According to police, they discovered there was a warrant out for his arrest, so they attempted to detain him. However, this prompted a struggle wherein Wright stepped back into his car and ultimately was killed by a police officer. As he was pulled over, Wright called his mother. He told her that he had been pulled over due to air fresheners hanging on his rearview mirror.  The following day police released the bodycam footage from the event which seemingly indicates that the police officer intended to Tase Wright, but accidentally used her gun. She resigned from the force the next day, along with the Chief of the Brooklyn Center Police Department. The police officer was subsequently arrested and it was announced that she would be charged with second-degree manslaughter. In response, protestors gathered outside of the Brooklyn Center Police Department building. These protests were labeled “unlawful” by law enforcement officials, resulting in police officers firing projectiles into the crows in an effort to get them to disperse. This occurred in the middle of the trial of Derek Chauvin, a police officer who murdered George Floyd just a few miles from where Daunte Wright was killed, as well as increased focus on the over-policing of Black communities and the intense, often deadly, violence that Black people experience from police officers. 
 
@@ -70,4 +77,3 @@ Point Total: 19 points
 
 *#Doyoung*: Doyoung: Doyoung is a South Korean singer and vocalist of NCT U and NCT 127. Recent news has surfaced regarding Doyoung’s July musical debut, where he will play the character of Count Axel von Fersen in ‘Marie Antoinette.’  
 
-We collected our data using the bot https://seobots.io/bots/twitter-hashtag-scraper. The bot generates one CSV per hashtag with columns for the following data: Username, User Handle, Date of Posting, Tweet Text, ReTweet Count, Like Count. Note that this bot-sourced data is not returned in a csv format, where commas are used to separate data, but rather in a space-separated format. We paid ******** to use the bot, which allowed us to determine the number of tweets we wanted to scrape for in each hashtag, the language that the tweet needed to be in, and the minimum number of likes that a tweet needed to have. We chose to only include tweets that had a minimum of 25 likes in order to ensure that the tweets were representative of what most people interacting with the hashtag were actually interacting with. If we had set this barrier to zero, it is possible that we scraped tweets that were just “noise”—spam, or unrelated to the hashtag itself. This bot runs with a completion time of under two minutes, and we sourced at minimum 200 tweets from each hashtag, only using the 200 most popular ones in our actual HITs. 
