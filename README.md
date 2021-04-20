@@ -42,17 +42,17 @@ The requesters will take the top scoring summary for each hashtag among the thre
 Point Total: 19 points
 
 -------------------------------------------------------
-**PATHS TO DELIVERABLE #2 ITEMS:**
+# PATHS TO DELIVERABLE #2 ITEMS:**
 
-RAW DATA - *Raw Tweet Scrapes/*
+**RAW DATA** - *Raw Tweet Scrapes/*
 
-Sample input/output for QC - *SampleData/0Tweets/QCInput.csv, SampleData/0Tweets/QCOutput.csv, SampleData/10Tweets/QCInput.csv, SampleData/10Tweets/QCOutput.csv, SampleData/20Tweets/QCInput.csv, SampleData/20Tweets/QCOutput.csv*
+**Sample input/output for QC** - *SampleData/0Tweets/QCInput.csv, SampleData/0Tweets/QCOutput.csv, SampleData/10Tweets/QCInput.csv, SampleData/10Tweets/QCOutput.csv, SampleData/20Tweets/QCInput.csv, SampleData/20Tweets/QCOutput.csv*
 
-Sample input/output for Aggregation - See input at *SampleData/0Tweets/AggregationPrep.csv, SampleData/10Tweets/AggregationPrep.csv, SampleData/20Tweets/AggregationPrep.csv* - See output at *AggregationScreenshots/*
+**Sample input/output for Aggregation** - See input at *SampleData/0Tweets/AggregationPrep.csv, SampleData/10Tweets/AggregationPrep.csv, SampleData/20Tweets/AggregationPrep.csv* - See output at *AggregationScreenshots/*
 
-Code for QC - *QCCode/*
+**Code for QC** - *QCCode/*
 
-Code for Aggregation - *AggregationCode*
+**Code for Aggregation** - *AggregationCode*
 
 
 
