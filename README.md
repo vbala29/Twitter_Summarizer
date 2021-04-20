@@ -42,21 +42,21 @@ Point Total: 19 points
 -------------------------------------------------------
 # PATHS TO DELIVERABLE #2 ITEMS:**
 
-**RAW DATA** - *Raw Tweet Scrapes/*
+**RAW DATA** - *data/RawTweetScrapes/*
 
 See "Raw Data Format and Tweet Selection Discussion" for details
 
-**Sample input/output for QC** - *SampleData/0Tweets/QCInput.csv, SampleData/0Tweets/QCOutput.csv, SampleData/10Tweets/QCInput.csv, SampleData/10Tweets/QCOutput.csv, SampleData/20Tweets/QCInput.csv, SampleData/20Tweets/QCOutput.csv*
+**Sample input/output for QC** - *data/SampleData/0Tweets/QCInput.csv, data/SampleData/0Tweets/QCOutput.csv, data/SampleData/10Tweets/QCInput.csv, data/SampleData/10Tweets/QCOutput.csv, data/SampleData/20Tweets/QCInput.csv, data/SampleData/20Tweets/QCOutput.csv*
 
 The QC input files contain the data from the first batch of HITs, where workers wrote summaries. Each row of this file is a summary that was written by each worker along with the tweets the worker was given and the average like count of these tweets. The QC output files contain 3x as many rows, because when we run the QCinput files as HITs on MTurk, we will have 3 workers giving ratings to one summary, so there are 3 ratings per summary.
 
-**Sample input/output for Aggregation** - See input at *SampleData/0Tweets/AggregationPrep.csv, SampleData/10Tweets/AggregationPrep.csv, SampleData/20Tweets/AggregationPrep.csv* - See output at *AggregationScreenshots/*
+**Sample input/output for Aggregation** - See input at *data/SampleData/0Tweets/AggregationPrep.csv, data/SampleData/10Tweets/AggregationPrep.csv, data/SampleData/20Tweets/AggregationPrep.csv* - See output at *AggregationScreenshots/*
 
 The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
 
-**Code for QC** - *QCCode/*
+**Code for QC** - *src/QCCode/*
 
-**Code for Aggregation** - *AggregationCode/*
+**Code for Aggregation** - *src/AggregationCode/*
 The AggregationCode/QualityvsAmountData.py creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
 The AggregationCode/RatingvsLikes.py creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
 
