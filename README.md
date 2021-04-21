@@ -40,13 +40,13 @@ The requesters will take the top scoring summary for each hashtag among the thre
 Point Total: 19 points
 
 -------------------------------------------------------
-# PATHS TO DELIVERABLE #2 ITEMS:
+# Paths To Deliverable #2 Items:
 
-**RAW DATA** - *data/RawTweetScrapes/*
+**Raw DataA** - *data/RawTweetScrapes/*
 
 See "Raw Data Format and Tweet Selection Discussion" for details
 
-**FIRST SET OF HITS** - *data/SampleData/0Tweets/0TweetsRaw*, *data/SampleData/0Tweets/10TweetsRaw*, *data/SampleData/0Tweets/20TweetsRaw* 
+**Sample data for first set of hits** - *data/SampleData/0Tweets/0TweetsRaw*, *data/SampleData/0Tweets/10TweetsRaw*, *data/SampleData/0Tweets/20TweetsRaw* 
 This is the sample csvs for the first set of HITs we will be running, where workers are given sets of tweets and a hashtag that those tweets correlate to, and are asked to write a summary about why the hashtag is trending using the information from those tweets as well as supplementary research.
 
 **HIT Generation** - In order to generate the HIT generation, we used all the CSVs in the Sample Data in order to form three CSVs: no tweets, 10 tweets, and 20 tweets. The way that the code works is that it sorts the dataframe by the hashtag and the number of likes from least to greatest. It then splits it up by 10 and 20 per row and averages the amount of likes that the row has. It then writes to a CSV file. 
