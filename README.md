@@ -60,22 +60,22 @@ The QC input files contain the data from the first batch of HITs, where workers 
 
 The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
 
-**Code for QC** - *src/QCCode/*
+**Code for QC** - *src/QCCode/AggPrepAndSelectHighest.py*
 Code Explanation: 
 For each individual input csv, we iterate all the rows. For each set of three rows(each summary will have three ratings) we keep track of their sum and at the last row, we append the row to a new dataframe with 'rating' column value changed to 'averaged rating'. We output the new dataframe as a new csv. 
 
 Sample outputs:
 0TweetsQCOutput.csv to generate 0AggregationPrep
 ![0TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115457213-c7ecbc80-a256-11eb-88f8-78f0c82b0ae5.png)
-
 10TweetsQCOutput.csv to generate 10AggregationPrep
-![10TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484735-ddc5a600-a285-11eb-9493-ed76d77e2d89.png)
-
+![10TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484735-ddc5a600-a285-11eb-9493-ed76d77e2d89.png) 
 20TweetsQCOutput.csv to generate 20AggregationPrep
 ![20TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484740-e0c09680-a285-11eb-8b94-2c39d4274ade.png)
 
 
-**Code for Aggregation** - *src/AggregationCode/*
+**Code for Aggregation** - *src/QCCode/AggPrepAndSelectHighest.py* 
+(it is the same code file for quality control because other than generating the csvs for QC , this python file outputs a list variable, which is the ultimate result we want from the aggregation process)
+
 Code Explanation: 
 We initialize a dictionary variable which use hashtag as key, avg rating, summary and label(which of the 0/10/20 csv file the summary comes from) as value. From the three AggregationPrep dataframes (read from the csvs) we will traverse through each of 3 converted dataframes and change dictionary value when we find a higher rating under the corresponding hashtag.  
 (the printout is shown at the bottom of the image)
