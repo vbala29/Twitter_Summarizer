@@ -42,7 +42,7 @@ Point Total: 19 points
 -------------------------------------------------------
 # Paths To Deliverable #2 Items:
 
-**Raw DataA** - *data/RawTweetScrapes/*
+**Raw Data** - *data/RawTweetScrapes/*
 
 See "Raw Data Format and Tweet Selection Discussion" for details
 
