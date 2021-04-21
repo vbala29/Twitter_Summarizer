@@ -67,7 +67,7 @@ Code Explanation:
 For each individual input csv, we iterate all the rows. For each set of three rows(each summary will have three ratings) we keep track of their sum and at the last row, we append the row to a new dataframe with 'rating' column value changed to 'averaged rating'. We output the new dataframe as a new csv. 
 
 Sample outputs:
-10TweetsQCOutput.csv to generate 10AggregationPrep
+10TweetsQCOutput.csv to generate 10TweetsAggregationPrep.csv
 ![10TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484735-ddc5a600-a285-11eb-9493-ed76d77e2d89.png) 
 
 **Code for Aggregation** 
