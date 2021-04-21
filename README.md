@@ -78,10 +78,10 @@ Sample outputs:
 **Code for Aggregation** 
 
 *src/QCCode/AggPrepAndSelectHighest.py* 
-(It is the same code file for quality control because other than generating the csvs for QC , this python file outputs a list variable, which is the ultimate result we want from the aggregation process)
 
 Code Explanation: 
-We initialize a dictionary variable which use hashtag as key, avg rating, summary and label(which of the 0/10/20 csv file the summary comes from) as value. From the three AggregationPrep dataframes (read from the csvs) we will traverse through each of 3 converted dataframes and change dictionary value when we find a higher rating under the corresponding hashtag.  
+We initialize a dictionary variable which use hashtag as key, avg rating, summary and label(which of the 0/10/20 csv file the summary comes from) as value. From the three AggregationPrep dataframes (read from the csvs) we will traverse through each of 3 converted dataframes and change the dictionary value when we find a summary with a higher rating under the corresponding hashtag. This dicitonary will essentially end up displaying the following information for EACH hashtag: highest rated summary, number of tweets with which this summary was written with (0, 10, 20), average likes of these tweets.
+
 (the printout is shown at the bottom of the image)
 ![highestRatedTagList](https://user-images.githubusercontent.com/73623005/115456556-df777580-a255-11eb-86a2-8ada472ff413.png)
 
