@@ -29,41 +29,57 @@ In all HITs, workers will be informed about the hashtag. The result of each HIT 
 
 We will implement another three separate HITs each containing summaries from No tweet, 10 Tweets and 20 Tweets groups. Each summary will be given to three workers for rating between 1-5 along with the associated hashtags. We will give criteria for each rating in our instruction to avoid some noise due to different people’s standards (see the mockup hits for the criteria). After each HIT being completed, we will average out the score for each summary using python. 
 
+
 **Component 5: Aggregation Module where various graphs comparing ratings in our 3 different categories (Google News, 10 tweets, 20 tweets) of summaries will be generated.** *(4 points)*
 
 We will now be left with 4 CSVs. Each CSV will contain averaged ratings for summaries, and each CSV will pertain to one of the following categories: workers given no tweets and solely told to use Google News, workers given 10 tweets, and workers given 20 tweets. We want to now aggregate these 4 CSVs and use them to present some summarized data. The first set of data we want to present is a line graph of average summary rating vs information given, where we consider the least information -> most information given to workers to be in the following order: Google News, workers given 10 tweets, workers given 20 tweets. We also want to present a graphic that shows the highest rated summary for each hashtag, along with which of our 3 categories the summary was in. Lastly, we want to analyze if giving workers more popular tweets in the 10 tweet/20 tweet category actually helped generate better summaries or not. We will thus create a graph of average likes versus summary rating, where average likes is the averaged like count for the tweets given to a worker that generated a given summary (recall that our bot collects data on likes for each tweet). 
 
 **Component 6: Aggregation Module Part 2, where the best summaries are selected from each hashtag based on ratings from workers.** *(1 point)*
 
-The requesters will take the top scoring summary for each hashtag among the three crowdsourced generated categories (no tweets, 10 tweets, 20 tweets), and display the best summary for each of the 10 hashtags; this will show the final results of the crowdworkers work in generating a summary about why a hashtag is trending.
+The requesters will take the top scoring summary for each hashtag among the three crowdsourced generated categories (no tweets, 10 tweets, 20 tweets), and display the best summary for each of the 10 hashtags; this will show the final results of the crowdworkers work in generating a summary about why a hashtag is trending. 
+
 
 Point Total: 19 points
 
 -------------------------------------------------------
-# Paths To Deliverable #2 Items:
+# PATHS TO DELIVERABLE #2 ITEMS:
 
-**Raw Data** - *data/RawTweetScrapes/*
+**RAW DATA** - *data/RawTweetScrapes/*
 
 See "Raw Data Format and Tweet Selection Discussion" for details
 
-**Sample data for first set of hits** - *data/SampleData/0Tweets/0TweetsRaw*, *data/SampleData/0Tweets/10TweetsRaw*, *data/SampleData/0Tweets/20TweetsRaw* 
+**FIRST SET OF HITS**
+*data/SampleData/0Tweets/0TweetsRaw*, *data/SampleData/0Tweets/10TweetsRaw*, *data/SampleData/0Tweets/20TweetsRaw* 
 This is the sample csvs for the first set of HITs we will be running, where workers are given sets of tweets and a hashtag that those tweets correlate to, and are asked to write a summary about why the hashtag is trending using the information from those tweets as well as supplementary research.
 
-**HIT Generation** - In order to generate the HIT generation, we used all the CSVs in the Sample Data in order to form three CSVs: no tweets, 10 tweets, and 20 tweets. The way that the code works is that it sorts the dataframe by the hashtag and the number of likes from least to greatest. It then splits it up by 10 and 20 per row and averages the amount of likes that the row has. It then writes to a CSV file. 
-
-**Sample input/output for QC** - *data/SampleData/0Tweets/0TweetsQCInput.csv, data/SampleData/0Tweets/0TweetsQCOutput.csv, data/SampleData/10Tweets/10TweetsQCInput.csv, data/SampleData/10Tweets/10TweetsQCOutput.csv, data/SampleData/20Tweets/20TweetsQCInput.csv, data/SampleData/20Tweets/20TweetsQCOutput.csv*
+**Sample input/output for QC** - *data/SampleData/0Tweets/QCInput.csv, data/SampleData/0Tweets/QCOutput.csv, data/SampleData/10Tweets/QCInput.csv, data/SampleData/10Tweets/QCOutput.csv, data/SampleData/20Tweets/QCInput.csv, data/SampleData/20Tweets/QCOutput.csv*
 
 The QC input files contain the data from the first batch of HITs, where workers wrote summaries. Each row of this file is a summary that was written by each worker along with the tweets the worker was given and the average like count of these tweets. The QC output files contain 3x as many rows, because when we run the QCinput files as HITs on MTurk, we will have 3 workers giving ratings to one summary, so there are 3 ratings per summary.
 
-**Sample input/output for Aggregation** - See input at *data/SampleData/0Tweets/0TweetsAggregationPrep.csv, data/SampleData/10Tweets/10TweetsAggregationPrep.csv, data/SampleData/20Tweets/20TweetsAggregationPrep.csv* - See output at *AggregationScreenshots/*
+**Sample input/output for Aggregation** - See input at *data/SampleData/0Tweets/AggregationPrep.csv, data/SampleData/10Tweets/AggregationPrep.csv, data/SampleData/20Tweets/AggregationPrep.csv* - See output at *AggregationScreenshots/*
 
 The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
 
-**Code for HIT Generation** - *src/HITGenerationCode/HITGeneration.py*
-
 **Code for QC** - *src/QCCode/*
+Code Explanation: 
+For each individual input csv, we iterate all the rows. For each set of three rows(each summary will have three ratings) we keep track of their sum and at the last row, we append the row to a new dataframe with 'rating' column value changed to 'averaged rating'. We output the new dataframe as a new csv. 
+
+Sample outputs:
+0TweetsQCOutput.csv to generate 0AggregationPrep
+![0TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115457213-c7ecbc80-a256-11eb-88f8-78f0c82b0ae5.png)
+
+10TweetsQCOutput.csv to generate 10AggregationPrep
+![10TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484735-ddc5a600-a285-11eb-9493-ed76d77e2d89.png)
+
+20TweetsQCOutput.csv to generate 20AggregationPrep
+![20TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484740-e0c09680-a285-11eb-8b94-2c39d4274ade.png)
+
 
 **Code for Aggregation** - *src/AggregationCode/*
+Code Explanation: 
+We initialize a dictionary variable which use hashtag as key, avg rating, summary and label(which of the 0/10/20 csv file the summary comes from) as value. From the three AggregationPrep dataframes (read from the csvs) we will traverse through each of 3 converted dataframes and change dictionary value when we find a higher rating under the corresponding hashtag.  
+(the printout is shown at the bottom of the image)
+![highestRatedTagList](https://user-images.githubusercontent.com/73623005/115456556-df777580-a255-11eb-86a2-8ada472ff413.png)
 
 *AggregationCode/QualityvsAmountData.py* creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
 
