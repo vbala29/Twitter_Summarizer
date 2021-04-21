@@ -60,7 +60,9 @@ The QC input files contain the data from the first batch of HITs, where workers 
 
 The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
 
-**Code for QC** - *src/QCCode/AggPrepAndSelectHighest.py*
+**Code for QC**
+
+*src/QCCode/AggPrepAndSelectHighest.py*
 Code Explanation: 
 For each individual input csv, we iterate all the rows. For each set of three rows(each summary will have three ratings) we keep track of their sum and at the last row, we append the row to a new dataframe with 'rating' column value changed to 'averaged rating'. We output the new dataframe as a new csv. 
 
@@ -73,17 +75,19 @@ Sample outputs:
 ![20TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484740-e0c09680-a285-11eb-8b94-2c39d4274ade.png)
 
 
-**Code for Aggregation** - *src/QCCode/AggPrepAndSelectHighest.py* 
-(it is the same code file for quality control because other than generating the csvs for QC , this python file outputs a list variable, which is the ultimate result we want from the aggregation process)
+**Code for Aggregation** 
+
+*src/QCCode/AggPrepAndSelectHighest.py* 
+(It is the same code file for quality control because other than generating the csvs for QC , this python file outputs a list variable, which is the ultimate result we want from the aggregation process)
 
 Code Explanation: 
 We initialize a dictionary variable which use hashtag as key, avg rating, summary and label(which of the 0/10/20 csv file the summary comes from) as value. From the three AggregationPrep dataframes (read from the csvs) we will traverse through each of 3 converted dataframes and change dictionary value when we find a higher rating under the corresponding hashtag.  
 (the printout is shown at the bottom of the image)
 ![highestRatedTagList](https://user-images.githubusercontent.com/73623005/115456556-df777580-a255-11eb-86a2-8ada472ff413.png)
 
-*AggregationCode/QualityvsAmountData.py* creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
+*src/AggregationCode/QualityvsAmountData.py* creates a graph of Quality vs Amount of Data (0, 10, 20 tweets) that can be seen in the screenshots folder.
 
-*AggregationCode/RatingvsLikes.py* creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
+*src/AggregationCode/RatingvsLikes.py* creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
 
 -------------------------------------------------------
 # Raw Data Format and Tweet Selection Discussion
