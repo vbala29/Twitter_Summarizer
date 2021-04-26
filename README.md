@@ -62,7 +62,7 @@ The Aggregation Prep files is data taken from manipulated QC output files, where
 
 **Code for HTML MTurk HITs**
 
-*src/MTurk/
+*src/MTurk/*
 
 **Code for QC**
 
