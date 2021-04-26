@@ -42,7 +42,7 @@ The requesters will take the top scoring summary for each hashtag among the thre
 Point Total: 19 points
 
 -------------------------------------------------------
-# PATHS TO DELIVERABLE #2 ITEMS:
+# PATHS TO DELIVERABLE #2/#4 ITEMS:
 
 **RAW DATA** - *data/RawTweetScrapes/*
 
@@ -60,6 +60,9 @@ The QC input files contain the data from the first batch of HITs, where workers 
 
 The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
 
+**Code for HTML MTurk HITs**
+*src/MTurk/
+
 **Code for QC**
 
 *src/QCCode/AggPrepAndSelectHighest.py*
@@ -70,7 +73,7 @@ Sample outputs:
 10TweetsQCOutput.csv to generate 10TweetsAggregationPrep.csv
 ![10TweetAggregationPrepImg](https://user-images.githubusercontent.com/73623005/115484735-ddc5a600-a285-11eb-9493-ed76d77e2d89.png) 
 
-**Code for Aggregation** 
+**Code for Data Aggregation** 
 
 *src/QCCode/AggPrepAndSelectHighest.py* 
 
@@ -99,3 +102,4 @@ We collected our data using the bot https://seobots.io/bots/twitter-hashtag-scra
 
 *#Doyoung*: Doyoung: Doyoung is a South Korean singer and vocalist of NCT U and NCT 127. Recent news has surfaced regarding Doyoung’s July musical debut, where he will play the character of Count Axel von Fersen in ‘Marie Antoinette.’  
 
+*#ArmenianGenocide*
