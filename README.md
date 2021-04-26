@@ -104,3 +104,7 @@ We collected our data using the bot https://seobots.io/bots/twitter-hashtag-scra
 *#Doyoung*: Doyoung: Doyoung is a South Korean singer and vocalist of NCT U and NCT 127. Recent news has surfaced regarding Doyoung’s July musical debut, where he will play the character of Count Axel von Fersen in ‘Marie Antoinette.’  
 
 *#ArmenianGenocide*
+
+*#GEICO500*
+
+*#BETREmembersDMX*
