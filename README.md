@@ -42,7 +42,7 @@ The requesters will take the top scoring summary for each hashtag among the thre
 Point Total: 19 points
 
 -------------------------------------------------------
-# PATHS TO DELIVERABLE #2/#4 ITEMS:
+# PATHS TO DELIVERABLE 2/3 ITEMS:
 
 **RAW DATA** - *data/RawTweetScrapes/*
 
