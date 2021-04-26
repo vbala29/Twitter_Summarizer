@@ -1,0 +1,72 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+    <crowd-instructions link-text="View instructions" link-type="button">
+        <short-summary>
+            <p>Explain why the following tweets are trending in 3 sentences or less. Only use Google News for extra research (see “Detailed Instructions” for more information). IMPORTANT: Click “View Instructions” and see “Examples” for what summaries should look like. </p>
+        </short-summary>
+
+        <detailed-instructions>
+            <p>
+            We have provided 20 tweets that belong to the same hashtag on Twitter. 
+            Given these 20 tweets, explain why the hashtag is trending. 
+            If you do any additional research, use only articles that appear in the "News" section on Google.
+            Limit your answers to 3 sentences or less and try to keep your summaries short and simple.
+        </p>
+        </detailed-instructions>
+
+        <positive-example>
+            <h3>Trending Hastag: Usher</h3>
+
+            <h3>Sample Tweets:</h3>
+            <p>“Usher was in the strip club throwing Monopoly money???”; “Usher is under fire after giving dancers fake bills with his face on them.”; “What the hell is Usher Bucks and why do I need to accept it”; “This is crazy. Usher is going viral right now after he allegedly threw fake money in the strip club. The money usher threw had his face on it and twitter has named the bills “Usher Bucks”<p>
+
+            <h3>Summary:</h3>
+            <p>Usher was accused of giving fake dollar bills with his face on it to strippers at a club in Las Vegas. The bills came in $100, $20, or $1 denominations. However, it was later revealed that he left these bills as part of a promotion for his upcoming performances and actually tipped using real money.</p>
+        </positive-example>
+
+        <negative-example>
+            <h3>Trending Hashtag: Usher</h3>
+            
+            <h3>Sample Tweets:</h3>
+            <p>“Usher was in the strip club throwing Monopoly money???”; “Usher is under fire after giving dancers fake bills with his face on them.”; “What the hell is Usher Bucks and why do I need to accept it”; “This is crazy. Usher is going viral right now after he allegedly threw fake money in the strip club. The money usher threw had his face on it and twitter has named the bills “Usher Bucks”<p>
+
+            <h3>Summary:</h3>
+            <p>Usher is trending because he has an upcoming concert</p>
+         </negative-example>
+    </crowd-instructions>
+    
+    <p>Explain why the following tweets are trending in 3 sentences or less. Only use Google News for extra research.</p>
+    <h3>Trending Hashtag: ${Hashtag}</h3>
+    
+    <h3>Example Tweets:</h3>
+    <p>${Tweet1}<p>
+    <p>${Tweet2}<p>
+    <p>${Tweet3}<p>
+    <p>${Tweet4}<p>
+    <p>${Tweet5}<p>
+    <p>${Tweet6}<p>
+    <p>${Tweet7}<p>
+    <p>${Tweet8}<p>
+    <p>${Tweet9}<p>
+    <p>${Tweet10}<p>
+    <p>${Tweet11}<p>
+    <p>${Tweet12}<p>
+    <p>${Tweet13}<p>
+    <p>${Tweet14}<p>
+    <p>${Tweet15}<p>
+    <p>${Tweet16}<p>
+    <p>${Tweet17}<p>
+    <p>${Tweet18}<p>
+    <p>${Tweet19}<p>
+    <p>${Tweet20}<p>
+
+
+    <crowd-input name="utterance" placeholder="Type why the hashtag is trending here..." required></crowd-input>
+</crowd-form>

@@ -1,0 +1,50 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+    <p>
+        Search the provided hashtag in Google to determine why its trending. Note: ONLY use articles that show up in the "News" section to determine why its trending.
+        Then, rate each summary independently on a scale from 1 to 5.
+        If the summary has provided any incorrect or false information, rate it as 1. 
+        If the summary is missing the half or more of the explanation, rate it as either 2 or 3. 
+        If the summary contains most of the information, but is missing one or two minor pieces of information, rate it as 4. 
+        If the summary is perfect and not missing anything, rate it as 5.
+      
+      
+      <h3>Examples</h3>
+      <p>
+      Example 1: Usher is trending because he has an upcoming concert.
+      Rating: 1 (missing or incomplete information)
+      </p>
+      
+      <p>
+      Example 2: Usher was accused of giving fake dollar bills with his face on it to strippers at a club in Las Vegas.
+      Rating: 3 (missing half of the explanation)
+      </p>
+      
+      <p>
+      Example 3: Usher was accused of giving fake dollar bills with his face on it to strippers at a club in Las Vegas. However, it was later revealed that he left these bills as part of a promotion for his upcoming performances and actually tipped using real money.
+      Rating: 5 (complete, correct summary)
+      </p>
+    </p>
+
+    <!-- The original language and text will be substituted for the "original_language" 
+           and "original_text" variables when you publish a CSV batch with multiple translations -->
+    <p><h3>Trending Hashtag: ${Hashtag}</h3>
+    
+    <p><h3>Summary: ${Summary}</h3></p>
+
+  <p>
+    <ul>
+      <li>
+        <p>Rate how informative the summary is, where 1 is least informative and 5 is most informative.</p> 
+        <p><crowd-slider name="Rating" min="1" max="5" required pin></crowd-slider></p>
+      </li>
+    <ul>
+  </p>
+</crowd-form>
+

@@ -1,0 +1,51 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+    <crowd-instructions link-text="View instructions" link-type="button">
+        <short-summary>
+            <p>Explain why the following hashtag is trending 3 sentences or less. Only use Google News for research (see “Detailed Instructions” for more information). IMPORTANT: Click “View Instructions” and see “Examples” for what summaries should look like. </p>
+        </short-summary>
+
+        <detailed-instructions>
+            <p>
+              We have provided a hashtag that is trending on Twitter. 
+              Please google the hashtag, and using only articles that appear in the "News" section, explain why the hashtag is trending. 
+              Limit your answers to 3 sentences or less and try to keep your summaries short and simple.
+        </p>
+        </detailed-instructions>
+
+        <positive-example>
+            <h3>Trending Hastag: Usher</h3>
+
+            <h3>Sample Google News Article Headlines:</h3>
+            <p>Radar Online - “User Accused of Screwing Over Stripper with Fake ‘Ush Bucks’ Dollar Bills”; Page Six - “Usher Slammed for Allegedly Using Fake Money at Las Vegas Strip Club”; BroBible - “R&B Singer Usher Gets Called Out By Stripper For Allegedly Throwing Fake Money With His Face On It At Strip Club”</p>
+
+            <h3>Summary:</h3>
+            <p>Usher was accused of giving fake dollar bills with his face on it to strippers at a club in Las Vegas. The bills came in $100, $20, or $1 denominations. However, it was later revealed that he left these bills as part of a promotion for his upcoming performances and actually tipped using real money.</p>
+        </positive-example>
+
+        <negative-example>
+            <h3>Trending Hashtag: Usher</h3>
+
+            <h3>Sample Google News Article Headlines:</h3>
+            <p>Radar Online - “User Accused of Screwing Over Stripper with Fake ‘Ush Bucks’ Dollar Bills”; Page Six - “Usher Slammed for Allegedly Using Fake Money at Las Vegas Strip Club”; BroBible - “R&B Singer Usher Gets Called Out By Stripper For Allegedly Throwing Fake Money With His Face On It At Strip Club”</p>
+
+            <h3>Summary:</h3>
+            <p>Usher is trending because he has an upcoming concert</p>
+         </negative-example>
+    </crowd-instructions>
+    
+    <p>Explain why the following hashtag is trending in 3 sentences or less. Only use Google News for your research.</p>
+    <h3>Trending Hashtag: ${Hashtag}<h3>
+    
+
+
+    <crowd-input name="utterance" placeholder="Type why the hashtag is trending here..." required></crowd-input>
+</crowd-form>
+
