@@ -61,6 +61,7 @@ The QC input files contain the data from the first batch of HITs, where workers 
 The Aggregation Prep files is data taken from manipulated QC output files, where the average rating for each summary was calculated and thus we return to only having one row per summary and not 3 rows. These files are used to create various graphs and diagrams which can be seen in the AggregationScreenshots/ folder.
 
 **Code for HTML MTurk HITs**
+
 *src/MTurk/
 
 **Code for QC**
