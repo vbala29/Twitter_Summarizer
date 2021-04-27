@@ -94,6 +94,7 @@ We initialize a dictionary variable which use hashtag as key, avg rating, summar
 *src/AggregationCode/RatingvsLikes.py* creates a graph of Average Rating vs Average Likes (that is, the average number of likes of the tweets given to a worker who wrote the summary corresponding to a particular rating) that can be seen in the screenshots folder. Note that this graph shows us whether giving workers more popular tweets helps them to write more accurate/highly rated summaries.
 
 **Sample Data Returned**
+
 This is an example of crowdsourced data on the regular MTurk website for the 0-Tweet HITs.
 ![Screen Shot 2021-04-27 at 5 24 51 PM](https://user-images.githubusercontent.com/56012430/116314889-b4bd7d80-a77d-11eb-9f17-f5e427d13c30.png)
 
