@@ -71,7 +71,7 @@ The Aggregation Prep files is data taken from manipulated QC output files, where
 For HTML code that helped run our MTurk HITs
 
 
-*putPathHere*
+*src/HITGeneration.py*
 In order to get the HITS into the form of a CSV file, we had to take the raw data that was given from the bot. We only wanted the first 200 tweets with only the hashtag, text, and number of likes from each CSV file so we first had to strip the tweets to only have the data we wanted. Then we created a dataframe that stored all the tweets from all the CSV files and we created three unique CSVs based on the number tweets that need to be given. For example, for the 20tweets CSV file, there would be 20 tweets that are given per HIT. We also averaged the number of likes per set of tweets per HITs.  
 
 **Code for QC**
