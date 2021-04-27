@@ -54,10 +54,13 @@ Note that our "real" data was collected on the actual MTurk website, not the san
 See "Raw Data Format and Tweet Selection Discussion" for details
 
 **FIRST SET OF HITS**
+
 *data/SampleData/0Tweets/0TweetsRaw*, *data/SampleData/0Tweets/10TweetsRaw*, *data/SampleData/0Tweets/20TweetsRaw* 
+
 This is the sample csvs for the first set of HITs we will be running, where workers are given sets of tweets and a hashtag that those tweets correlate to, and are asked to write a summary about why the hashtag is trending using the information from those tweets as well as supplementary research.
 
 *data/RoundOneHITCSVs/* 
+
 This includes the actual CSV files we used when running the first round of HITs on MTurk!
 
 **Sample input/output for QC** - *data/SampleData/0Tweets/0TweetsQCInput.csv, data/SampleData/0Tweets/0TweetsQCOutput.csv, data/SampleData/10Tweets/10TweetsQCInput.csv, data/SampleData/10Tweets/10TweetsQCOutput.csv, data/SampleData/20Tweets/20TweetsQCInput.csv, data/SampleData/20Tweets/20TweetsQCOutput.csv*
