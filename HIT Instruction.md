@@ -7,7 +7,7 @@ Summary Writing HITs
 ---------------------------------------------------------------
 
 
-**NOTE FOR GRADER:** *THESE HITS are not fully on Sandbox because our HITS take a long time to complete and we would have a faster turnaround time if we used actual Mechanical Turk. Attached is proof that we posted the HITS to MTurk. We used a sample data of 10 rows to showcase how the layout looks in MTurk. We collected all of our real data from the regular MTurk 
+**NOTE FOR GRADER:** *THESE HITS are not fully on Sandbox because our HITS take a long time to complete and we would have a faster turnaround time if we used actual Mechanical Turk. Attached is proof that we posted the HITS to MTurk. We posted sample data of 10 rows onto MTurk Sandbox to showcase how the layout looks in MTurk and for you to interact with our HITs. We collected all of our real data from the regular MTurk 
 website, in order to get faster turnaround on what can be time consuming tasks. *
 ![Screen Shot 2021-04-27 at 5 39 00 PM](https://user-images.githubusercontent.com/54555764/116316444-f2bba100-a77f-11eb-8c9e-de4f2859b373.jpeg)
 
@@ -25,12 +25,11 @@ The tweets will contain some information and you may only use Google News for su
 Please view the three sections underneath instructions (summary, detailed instructions and examples) before beginning. 
 When you write your summary, please keep it informational but under 3 sentences. 
 
-QC HITs
+QC HITs (Link to HITs yet to be posted, this HIT will be posted once data is collected from first round).
 ---------------------------------------------------------------
 The following is a different batch of HITs you can do. This is our quality control unit.
 
 The instruction video link is here: https://drive.google.com/file/d/1-BFRf_87355acsmH7hRUuG31qc2D81NW/view?usp=sharing
-The link to the HIT is here: 
 
 For this one, it is important that you view the rubric before rating the summaries. Please making sure that you adhere to the guideline. 
 1 point corresponds to: missing or false information
