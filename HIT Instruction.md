@@ -19,9 +19,13 @@ The link to the HIT is here:
 
 For this one, it is important that you view the rubric before rating the summaries. Please making sure that you adhere to the guideline. 
 1 point corresponds to: missing or false information
+
 2 or 3 points: missing half or more of the explanation
+
 4 points: missing one or two pieces of minor information
+
 5 points: complete, correct summary
+
 You are only allowed to use Google News to check the validity of the information.
 
 We appreciate your effort. Thank you very much. 
