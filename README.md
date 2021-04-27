@@ -45,6 +45,7 @@ Point Total: 19 points
 # PATHS TO DELIVERABLE 2/3 ITEMS:
 
 **How to do HITS**
+
 See the document *HIT Instruction.md* for more information on how to do our demonstration of HITs.
 Note that our "real" data was collected on the actual MTurk website, not the sandbox.
 
