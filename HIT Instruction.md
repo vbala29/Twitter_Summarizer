@@ -5,10 +5,11 @@ Here are the instructions on how to do our HITs!
 
 Summary Writing HITs
 ---------------------------------------------------------------
-Please access the following link which takes you to MTurk Sandbox:
 
-**NOTE FOR GRADER:** *THESE HITS on the sandbox are purely for testing and demonstration. We collected all of our real data from the regular MTurk 
-website, in order to get faster turnaround on what can be time consuming tasks.*
+
+**NOTE FOR GRADER:** *THESE HITS are not on Sandbox because our HITS take a long time to complete and we would have a faster turnaround time if we used actual Mechanical Turk. Attached is proof that we posted the HITS to MTurk. We collected all of our real data from the regular MTurk 
+website, in order to get faster turnaround on what can be time consuming tasks. *
+![Screen Shot 2021-04-27 at 5 39 00 PM](https://user-images.githubusercontent.com/54555764/116316444-f2bba100-a77f-11eb-8c9e-de4f2859b373.jpeg)
 
 
 Please make sure that you only choose one of the following HITs.
