@@ -57,6 +57,9 @@ See "Raw Data Format and Tweet Selection Discussion" for details
 *data/SampleData/0Tweets/0TweetsRaw*, *data/SampleData/0Tweets/10TweetsRaw*, *data/SampleData/0Tweets/20TweetsRaw* 
 This is the sample csvs for the first set of HITs we will be running, where workers are given sets of tweets and a hashtag that those tweets correlate to, and are asked to write a summary about why the hashtag is trending using the information from those tweets as well as supplementary research.
 
+*data/RoundOneHITCSVs/* 
+This includes the actual CSV files we used when running the first round of HITs on MTurk!
+
 **Sample input/output for QC** - *data/SampleData/0Tweets/0TweetsQCInput.csv, data/SampleData/0Tweets/0TweetsQCOutput.csv, data/SampleData/10Tweets/10TweetsQCInput.csv, data/SampleData/10Tweets/10TweetsQCOutput.csv, data/SampleData/20Tweets/20TweetsQCInput.csv, data/SampleData/20Tweets/20TweetsQCOutput.csv*
 
 The QC input files contain the data from the first batch of HITs, where workers wrote summaries. Each row of this file is a summary that was written by each worker along with the tweets the worker was given and the average like count of these tweets. The QC output files contain 3x as many rows, because when we run the QCinput files as HITs on MTurk, we will have 3 workers giving ratings to one summary, so there are 3 ratings per summary.
