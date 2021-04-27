@@ -2,7 +2,14 @@
 
 Here are the instructions on how to do our HITs!
 ---------------------------------------------------------------
+
+Summary Writing HITs
+---------------------------------------------------------------
 Please access the following link which takes you to MTurk Sandbox:
+
+**NOTE FOR GRADER:** *THESE HITS on the sandbox are purely for testing and demonstration. We collected all of our real data from the regular MTurk 
+website, in order to get faster turnaround on what can be time consuming tasks.*
+
 
 Please make sure that you only choose one of the following HITs.
 
@@ -16,6 +23,8 @@ The tweets will contain some information and you may only use Google News for su
 
 Please view the three sections underneath instructions (summary, detailed instructions and examples) before beginning. 
 When you write your summary, please keep it informational but under 3 sentences. 
+
+QC HITs
 ---------------------------------------------------------------
 The following is a different batch of HITs you can do. This is our quality control unit.
 
@@ -29,6 +38,8 @@ For this one, it is important that you view the rubric before rating the summari
 5 points: complete, correct summary
 
 You are only allowed to use Google News to check the validity of the information.
+
+Thank you!
 ---------------------------------------------------------------
 
 We appreciate your effort. Thank you very much. 
