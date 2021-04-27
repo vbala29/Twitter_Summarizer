@@ -7,7 +7,7 @@ Summary Writing HITs
 ---------------------------------------------------------------
 
 
-**NOTE FOR GRADER:** *THESE HITS are not on Sandbox because our HITS take a long time to complete and we would have a faster turnaround time if we used actual Mechanical Turk. Attached is proof that we posted the HITS to MTurk. We collected all of our real data from the regular MTurk 
+**NOTE FOR GRADER:** *THESE HITS are not fully on Sandbox because our HITS take a long time to complete and we would have a faster turnaround time if we used actual Mechanical Turk. Attached is proof that we posted the HITS to MTurk. We used a sample data of 10 rows to showcase how the layout looks in MTurk. We collected all of our real data from the regular MTurk 
 website, in order to get faster turnaround on what can be time consuming tasks. *
 ![Screen Shot 2021-04-27 at 5 39 00 PM](https://user-images.githubusercontent.com/54555764/116316444-f2bba100-a77f-11eb-8c9e-de4f2859b373.jpeg)
 
