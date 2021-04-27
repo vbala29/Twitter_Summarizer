@@ -108,3 +108,5 @@ We collected our data using the bot https://seobots.io/bots/twitter-hashtag-scra
 *#GEICO500*
 
 *#BETREmembersDMX*
+
+*#supermoon*
