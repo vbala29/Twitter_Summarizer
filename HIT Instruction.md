@@ -7,7 +7,11 @@ Please watch the video befoe beginning your work.
 The 0Tweet Hashtag Summarizer's video instruction: https://vimeo.com/542115148
 The 10/20Tweet Hashtag Summarizer's video instruction:https://vimeo.com/542116289
 
-In our HIT, you will be asked to come up with a quality summary to explain why a hashtag is trending on twitter. You will either be given only the hashtag, 10 tweets with the hashtag or 20 tweets with the hashtags. The tweets will contain some information and you may only use Google News for supplemental research. Please view the three sections underneath instructions (summary, detailed instructions and examples) before beginning. When you write your summary, please keep it informational but under 3 sentences. 
+In our HIT, you will be asked to come up with a quality summary to explain why a hashtag is trending on twitter. 
+You will either be given only the hashtag, 10 tweets with the hashtag or 20 tweets with the hashtags. 
+The tweets will contain some information and you may only use Google News for supplemental research. 
+Please view the three sections underneath instructions (summary, detailed instructions and examples) before beginning. 
+When you write your summary, please keep it informational but under 3 sentences. 
 
 The following is a different batch of HITs you can do. This is our quality control unit.
 The instruction video link is here: https://drive.google.com/file/d/1-BFRf_87355acsmH7hRUuG31qc2D81NW/view?usp=sharing
