@@ -100,6 +100,10 @@ We initialize a dictionary variable which use hashtag as key, avg rating, summar
 
 **Sample Data Returned**
 
+Proof that we published on MTUrk (non-sandbox):
+![Screen Shot 2021-04-27 at 5 39 00 PM](https://user-images.githubusercontent.com/56012430/116316174-8ccf1980-a77f-11eb-9678-743d37f761f7.png)
+
+
 This is an example of crowdsourced data on the regular MTurk website for the 0-Tweet HITs.
 ![Screen Shot 2021-04-27 at 5 24 51 PM](https://user-images.githubusercontent.com/56012430/116314889-b4bd7d80-a77d-11eb-9f17-f5e427d13c30.png)
 
