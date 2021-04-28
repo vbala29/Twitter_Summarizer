@@ -35,7 +35,7 @@ QC HITs (Link to HITs yet to be posted, this HIT will be posted once data is col
 ---------------------------------------------------------------
 The following is a different batch of HITs you can do. This is our quality control unit.
 
-The instruction video link is here: https://drive.google.com/file/d/1-BFRf_87355acsmH7hRUuG31qc2D81NW/view?usp=sharing
+The instruction video link is here: https://vimeo.com/542438928
 
 For this one, it is important that you view the rubric before rating the summaries. Please making sure that you adhere to the guideline. 
 1 point corresponds to: missing or false information
