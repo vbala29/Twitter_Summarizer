@@ -13,9 +13,9 @@ website, in order to get faster turnaround on what can be time consuming tasks. 
 
 O Tweets HITs: https://workersandbox.mturk.com/projects/36R3RQSDQULSO44MXIDXC7ST1N207H/tasks/3S1L4CQSFXT0ZAJZPYXRENU6EHZAFZ?assignment_id=3J88R45B2HMR9KDF4DQCZ9FOF4YPXG&auto_accept=true
 
-10 Tweets HITs: https://workersandbox.mturk.com/projects/3MX1CQXD15X1D36HH294JUBTO3JWD7/tasks?ref=w_pl_prvw
+10 Tweets HITs: https://workersandbox.mturk.com/projects/3MX1CQXD15X1D36HH294JUBTO3JWD7/tasks/3CVBMEMMXB42U4C7DL977H4TTO6H7D?assignment_id=3SB5N7Y3O4SDZHE5YIBIWMEL46R0GT&auto_accept=true
 
-20 Tweets HITs: https://workersandbox.mturk.com/projects/3XK0MGNJSVUBL3YJTRTAY2WQQAHU4V/tasks?ref=w_pl_prvw
+20 Tweets HITs: https://workersandbox.mturk.com/projects/3XK0MGNJSVUBL3YJTRTAY2WQQAHU4V/tasks/3MNJFORX8BS3T47IU26A6CEKM3YF5Y?assignment_id=3ON104KXQLKQVRM6WO22USQMF6WW43&auto_accept=true
 
 
 Please make sure that you only choose one of the following HITs.
