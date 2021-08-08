@@ -1,5 +1,7 @@
 # NETS213 Final Project - HASHTAG DICTIONARY - a Crowdsourced Hashtag Summarizer 
 
+**Please see https://vimeo.com/547988357 for a video about our project's goal, design, and results**
+
 **Component 1: Selecting top-trending hashtags from Twitter’s trending page that have been active for more than 24 hrs.** *(2 points)*
 
 For this component, we planned to select 10 hashtags from the Twitter trending page. We used newly created twitter accounts, that weren’t following anything, to view the trending page on Twitter, as we did not want accounts we followed to affect what we saw on the trending page. However, it was inevitable that our location affected what we saw on the trending page, which was okay, as we were more inclined to select English hashtags in general, rather than ones with tweets primarily in other languages. Note that Twitter states on their website that, “Trends are determined by an algorithm and, by default, are tailored for you based on who you follow, your interests, and your location.” Thus, it is possible that Twitter has collected data from sources besides just one’s location and what they follow on Twitter; thus, it may be impossible for us to truly see a generic Twitter trending page. We thought about using online data sites to track trending hashtags, but realized that the point of this project is not to select the top trending hashtags, but to simply select trending ones that may be obscure or unfamiliar to people, and thus require some sort of summary. 
